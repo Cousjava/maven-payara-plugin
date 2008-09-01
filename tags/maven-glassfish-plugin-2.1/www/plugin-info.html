@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+<html>
+  <head>
+    <title>Maven Glassfish Plugin - Plugin documentation</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+                </head>
+  <body class="composite">
+    <!-- TODO: move this into JavaScript to patch the skin
+      <div class="xright">      <a href="http://www.apache.org/">Apache</a>
+          |
+          <a href="http://maven.apache.org/">Maven</a>
+          |
+          <a href="http://maven.apache.org/plugins/">Maven Plugins</a>
+      </div>
+    -->
+    <div id="leftColumn">
+      <div id="navcolumn">
+             <dl class=navgroup>
+        <dt>Overview</dt>
+        <dd><ul>
+              
+    <li class="none">
+              <a href="index.html">Introduction</a>
+        </li>
+              
+    <li class="none">
+              <strong>Goals</strong>
+        </li>
+              
+    <li class="none">
+              <a href="usage.html">Usage</a>
+        </li>
+              
+    <li class="none">
+              <a href="faq.html">FAQ</a>
+        </li>
+          </ul></dd>
+    </dl>
+      <dl class=navgroup>
+        <dt>Examples</dt>
+        <dd><ul>
+              
+    <li class="none">
+              <a href="examples/complete.html">Complete example</a>
+        </li>
+              
+    <li class="none">
+              <a href="examples/profiles.html">Using profiles</a>
+        </li>
+          </ul></dd>
+    </dl>
+      <dl class=navgroup>
+        <dt>Project Documentation</dt>
+        <dd><ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="project-info.html">Project Information</a>
+              </li>
+              
+                
+              
+            
+              
+            <li class="expanded">
+              <a href="project-reports.html">Project Reports</a>
+                <ul>
+                  
+    <li class="none">
+              <strong>Plugin documentation</strong>
+        </li>
+              </ul>
+        </li>
+          </ul></dd>
+    </dl>
+        </div>
+      <script>
+        // replace the java.net project tools with the navigation bar from Maven.
+        // also get rid of "Get Involved" thingie too, while we are at it
+        var pt = document.getElementById("projecttools");
+        var nv = document.getElementById("navcolumn");
+        
+        while(pt.previousSibling!=null)
+          pt.parentNode.removeChild(pt.previousSibling);
+        
+        pt.parentNode.insertBefore(nv,pt);
+        pt.parentNode.removeChild(pt);
+      </script>
+      <script>
+        // kill "description" h3 bar
+        var ld = document.getElementById("longdescription");
+        if(ld!=null) {
+          for( n=ld.firstChild; n!=null; n=n.nextSibling ) {
+            if(n.nodeType==1 && n.innerHTML=="Description" ) {
+              n.parentNode.removeChild(n);
+              break;
+            }
+          }
+        }
+      </script>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Plugin documentation</h2>
+<p>Goals available:</p>
+<table class="bodyTable"><tr class="a"><th>Goal</th>
+<th>Description</th>
+</tr>
+<tr class="b"><td><a href="stop-domain-mojo.html">glassfish:stop-domain</a>
+</td>
+<td>Stop a domain which is currently running in a local or remote Glassfish instance</td>
+</tr>
+<tr class="a"><td><a href="redeploy-mojo.html">glassfish:redeploy</a>
+</td>
+<td>"Hot" redeploy JavaEE components to a domain in a local or remote Glassfish instance</td>
+</tr>
+<tr class="b"><td><a href="undeploy-mojo.html">glassfish:undeploy</a>
+</td>
+<td>Undeploy JavaEE components which are currently deployed to a domain in a local or remote Glassfish instance</td>
+</tr>
+<tr class="a"><td><a href="deploy-mojo.html">glassfish:deploy</a>
+</td>
+<td>Deploy JavaEE component artifacts to domain in a local or remote Glassfish instance</td>
+</tr>
+<tr class="b"><td><a href="delete-domain-mojo.html">glassfish:delete-domain</a>
+</td>
+<td>Delete an existing domain in a local or remote Glassfish instance</td>
+</tr>
+<tr class="a"><td><a href="create-virtual-server-mojo.html">glassfish:create-virtual-server</a>
+</td>
+<td>Create a new virtual server in a local or remote Glassfish instance</td>
+</tr>
+<tr class="b"><td><a href="start-domain-mojo.html">glassfish:start-domain</a>
+</td>
+<td>Start an existing domain in a local or remote Glassfish instance</td>
+</tr>
+<tr class="a"><td><a href="create-domain-mojo.html">glassfish:create-domain</a>
+</td>
+<td>Create a new domain in a local or remote Glassfish instance</td>
+</tr>
+</table>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2007-2008
+    
+          
+  
+
+  
+  
+  &nbsp;| Last Published: 03 Jul 2008
+  &nbsp;| Version: 2.0
+</div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>
