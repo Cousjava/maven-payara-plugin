@@ -59,6 +59,7 @@ import org.apache.maven.plugin.logging.Log;
 public class CreateDomainGlassfishMojo extends GlassfishMojo {
 
     public void doExecute() throws MojoExecutionException, MojoFailureException {
+        
         ProcessBuilder processBuilder = new ProcessBuilder();
         Log log = getLog();
         if (domain.exists()) {
