@@ -39,23 +39,6 @@ Usage
     Snapshots of the next development iteration are available (for those who live life on the edge) from the {{{http://maven.ocean.net.au/snapshot}Ocean Maven2 Snapshot Repository}}. The additions for your POM are:
 
 ---------------------------------------------------------
-    <pluginRepositories>
-        ...
-        <pluginRepository>
-            <id>snapshot.ocean.net.au</id>
-            <name>Ocean Snapshot Repository</name>
-            <url>http://maven.ocean.net.au/snapshot</url>
-            <releases>
-                <enabled>false</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </pluginRepository>
-        ...
-    </pluginRepositories>
 
     <build>
         ...
@@ -64,7 +47,7 @@ Usage
             <plugin>
                 <groupId>org.glassfish.maven.plugin</groupId>
                 <artifactId>maven-glassfish-plugin</artifactId>
-                <version>2.2-SNAPSHOT</version>
+                <version>2.3-SNAPSHOT</version>
             </plugin>
             ...
         </plugins>

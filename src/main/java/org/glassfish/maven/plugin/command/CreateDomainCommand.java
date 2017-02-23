@@ -84,6 +84,7 @@ public class CreateDomainCommand extends InteractiveAsadminCommand {
         addOptionalParameter(parameters, "--adminport", domain.getAdminPort());
         addOptionalParameter(parameters, "--instanceport", domain.getHTTPPort());
         addOptionalParameter(parameters, "--domainproperties", domainProperties.toString());
+        addOptionalParameter(parameters, "--savemasterpassword", "true");
         parameters.add(domain.getName());
         return parameters;
     }

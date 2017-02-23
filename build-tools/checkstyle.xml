@@ -46,7 +46,11 @@
     <!--<module name="Translation">-->
     <!--<property name="severity" value="${translation.severity}"/>-->
     <!--</module>-->
-    <module name="PackageHtml" />
+    <!--<module name="PackageHtml" />-->
+    <module name="JavadocPackage">
+        <property name="allowLegacy" value="true"/>
+    </module>
+    
     <!-- Duplicate Code -->
     <module name="StrictDuplicateCode">
         <property name="min" value="30" />
@@ -56,30 +60,30 @@
 
     <module name="TreeWalker">
         <!--<property name="cacheFile" value="${checkstyle.cache}"/>-->
-
+        <property name="cacheFile" value="target/cache"/>
         <!-- javadoc -->
         <module name="JavadocType">
-            <property name="excludeScope" value="private" />
+            <!--<property name="excludeScope" value="private" />-->
             <property name="excludeScope" value="package" />
             <property name="scope" value="protected" />
-            <property name="scope" value="public" />
+            <!--<property name="scope" value="public" />-->
             <property name="authorFormat" value=".+" />
             <property name="versionFormat" value="\$Id.*\$" />
         </module>
         <module name="JavadocMethod">
-            <property name="excludeScope" value="private" />
+            <!--<property name="excludeScope" value="private" />-->
             <property name="excludeScope" value="package" />
             <property name="scope" value="protected" />
-            <property name="scope" value="public" />
+            <!--<property name="scope" value="public" />-->
             <property name="allowMissingParamTags" value="true" />
             <property name="allowMissingThrowsTags" value="true" />
             <property name="allowMissingReturnTag" value="true" />
         </module>
         <module name="JavadocVariable">
-            <property name="excludeScope" value="private" />
+            <!--<property name="excludeScope" value="private" />-->
             <property name="excludeScope" value="package" />
             <property name="scope" value="protected" />
-            <property name="scope" value="public" />
+            <!--<property name="scope" value="public" />-->
         </module>
         <module name="JavadocStyle">
             <property name="scope" value="public" />
@@ -101,10 +105,7 @@
         <module name="ParameterName" />
         <module name="TypeName" />
 
-        <!-- Header -->
-        <module name="Header">
-            <property name="headerFile" value="${checkstyle.header.file}" />
-        </module>
+
 
         <!-- Imports -->
         <module name="AvoidStarImport" />
@@ -112,37 +113,7 @@
         <module name="RedundantImport" />
         <module name="UnusedImports" />
 
-        <!-- Size Violations -->
-        <module name="FileLength">
-            <property name="max" value="1400" />
-        </module>
-        <module name="LineLength">
-            <property name="max" value="130" />
-            <property name="ignorePattern" value="^ *\* *" />
-        </module>
-        <module name="MethodLength">
-            <property name="max" value="200" />
-            <property name="tokens" value="METHOD_DEF" />
-        </module>
-        <module name="MethodLength">
-            <property name="max" value="60" />
-            <property name="tokens" value="CTOR_DEF" />
-        </module>
-        <module name="ParameterNumber">
-            <property name="max" value="8" />
-            <property name="tokens" value="METHOD_DEF" />
-        </module>
-        <module name="ParameterNumber">
-            <property name="max" value="8" />
-            <property name="tokens" value="CTOR_DEF" />
-        </module>
-        <module name="AnonInnerLength">
-            <property name="max" value="20" />
-        </module>
-        <module name="ExecutableStatementCount">
-            <property name="max" value="30" />
-            <property name="tokens" value="CTOR_DEF, INSTANCE_INIT, STATIC_INIT" />
-        </module>
+        
 
         <!-- Whitespace -->
         <module name="EmptyForInitializerPad" />
@@ -307,4 +278,43 @@
 
 
     </module>
+    
+            <!-- Header -->
+        <module name="Header">
+            <property name="headerFile" value="${checkstyle.header.file}" />
+        </module>
+        
+        
+        <!-- Size Violations -->
+        <module name="FileLength">
+            <property name="max" value="1400" />
+        </module>
+        <module name="LineLength">
+            <property name="max" value="130" />
+            <property name="ignorePattern" value="^ *\* *" />
+        </module>
+        <module name="MethodLength">
+            <property name="max" value="200" />
+            <property name="tokens" value="METHOD_DEF" />
+        </module>
+        <module name="MethodLength">
+            <property name="max" value="60" />
+            <property name="tokens" value="CTOR_DEF" />
+        </module>
+        <module name="ParameterNumber">
+            <property name="max" value="8" />
+            <property name="tokens" value="METHOD_DEF" />
+        </module>
+        <module name="ParameterNumber">
+            <property name="max" value="8" />
+            <property name="tokens" value="CTOR_DEF" />
+        </module>
+        <module name="AnonInnerLength">
+            <property name="max" value="20" />
+        </module>
+        <module name="ExecutableStatementCount">
+            <property name="max" value="30" />
+            <property name="tokens" value="CTOR_DEF, INSTANCE_INIT, STATIC_INIT" />
+        </module>
+        
 </module>
