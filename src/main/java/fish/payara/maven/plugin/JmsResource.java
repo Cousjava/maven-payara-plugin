@@ -34,7 +34,7 @@
  * holder.
  ******************************************************************************/
 
-package org.glassfish.maven.plugin;
+package fish.payara.maven.plugin;
 
 import au.net.ocean.maven.plugin.annotation.Parameter;
 import au.net.ocean.maven.plugin.annotation.Required;

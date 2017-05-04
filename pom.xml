@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.glassfish.maven.plugin</groupId>
+    <groupId>fish.payara.maven.plugin</groupId>
     <artifactId>payara-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
     <version>2.3-SNAPSHOT</version>
     <name>Payara Maven Plugin</name>
     <description>
-        The Glassfish Maven Plugin is a Maven2 plugin allowing management of Glassfish domains and component deployments
+        The Payara Maven Plugin is a Maven plugin allowing management of Payara domains and component deployments
         from within the Maven build lifecycle. It encapsulates domain configuration and deployment attributes within the build
         configuration for a more rapid development integration loop and simplified management of continuous integration testing of
         components destined for deployment within the Glassfish V2 and later JavaEE containers.
@@ -196,38 +196,53 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-plugin-plugin</artifactId>
-                <version>2.4.3</version>
+                <version>3.5</version>
                 <configuration>
                     <goalPrefix>payara</goalPrefix>
                     <extractors>
                         <extractor />
                     </extractors>
+                    <configuration>
+                    <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+                </configuration>
                 </configuration>
                 <executions>
+                    <execution>
+                        <id>mojo-descriptor</id>
+                        <goals>
+                            <goal>descriptor</goal>
+                        </goals>
+                    </execution>
                     <execution>
                         <id>generate-descriptor-after-compile</id>
                         <phase>compile</phase>
                         <goals>
                             <goal>descriptor</goal>
                         </goals>
+                        
                         <configuration>
+                            
                             <extractors>
-                                <extractor>annotation</extractor>
+                                <!--<extractor>annotation</extractor>-->
                             </extractors>
+                            
                         </configuration>
                     </execution>
                     <execution>
-                        <id>generate-xdoc-after-compile</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>xdoc</goal>
-                        </goals>
-                        <configuration>
-                            <extractors>
-                                <extractor>annotation</extractor>
-                            </extractors>
-                        </configuration>
-                    </execution>
+                    <id>default-descriptor</id>
+                    <goals>
+                        <goal>descriptor</goal>
+                    </goals>
+                    <phase>process-classes</phase>
+                </execution>
+                <execution>
+                    <id>help-descriptor</id>
+                    <goals>
+                        <goal>helpmojo</goal>
+                    </goals>
+                    <phase>process-classes</phase>
+                </execution>
+                    <!--removed xdoc as no longer supported-->
                 </executions>
                 <dependencies>
                     <dependency>

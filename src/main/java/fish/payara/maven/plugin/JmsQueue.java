@@ -34,7 +34,7 @@
  * holder.
  ******************************************************************************/
 
-package org.glassfish.maven.plugin;
+package fish.payara.maven.plugin;
 
 
 /**

@@ -34,20 +34,20 @@
  * holder.
  ******************************************************************************/
 
-package org.glassfish.maven.plugin;
+package fish.payara.maven.plugin;
 
-import org.glassfish.maven.plugin.command.AddResourcesCommand;
-import org.glassfish.maven.plugin.command.CreateAuthRealmCommand;
-import org.glassfish.maven.plugin.command.CreateDomainCommand;
-import org.glassfish.maven.plugin.command.CreateJDBCConnectionPoolCommand;
-import org.glassfish.maven.plugin.command.CreateJDBCResourceCommand;
-import org.glassfish.maven.plugin.command.CreateJMSDestinationCommand;
-import org.glassfish.maven.plugin.command.CreateJMSResourceCommand;
-import org.glassfish.maven.plugin.command.CreateJVMOptionsCommand;
-import org.glassfish.maven.plugin.command.CreateMessageSecurityProviderCommand;
-import org.glassfish.maven.plugin.command.SetCommand;
-import org.glassfish.maven.plugin.command.StartDomainCommand;
-import org.glassfish.maven.plugin.command.StopDomainCommand;
+import fish.payara.maven.plugin.command.AddResourcesCommand;
+import fish.payara.maven.plugin.command.CreateAuthRealmCommand;
+import fish.payara.maven.plugin.command.CreateDomainCommand;
+import fish.payara.maven.plugin.command.CreateJDBCConnectionPoolCommand;
+import fish.payara.maven.plugin.command.CreateJDBCResourceCommand;
+import fish.payara.maven.plugin.command.CreateJMSDestinationCommand;
+import fish.payara.maven.plugin.command.CreateJMSResourceCommand;
+import fish.payara.maven.plugin.command.CreateJVMOptionsCommand;
+import fish.payara.maven.plugin.command.CreateMessageSecurityProviderCommand;
+import fish.payara.maven.plugin.command.SetCommand;
+import fish.payara.maven.plugin.command.StartDomainCommand;
+import fish.payara.maven.plugin.command.StopDomainCommand;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 

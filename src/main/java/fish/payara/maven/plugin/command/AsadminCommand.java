@@ -34,13 +34,13 @@
  * holder.
  ******************************************************************************/
 
-package org.glassfish.maven.plugin.command;
+package fish.payara.maven.plugin.command;
 
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugin.logging.Log;
-import org.glassfish.maven.plugin.GlassfishMojo;
-import org.glassfish.maven.plugin.Property;
+import fish.payara.maven.plugin.GlassfishMojo;
+import fish.payara.maven.plugin.Property;
 
 import java.io.BufferedReader;
 import java.io.File;

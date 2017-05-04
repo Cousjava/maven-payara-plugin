@@ -34,11 +34,11 @@
  * holder.
  ******************************************************************************/
 
-package org.glassfish.maven.plugin;
+package fish.payara.maven.plugin;
 
 import au.net.ocean.maven.plugin.annotation.Mojo;
 import static au.net.ocean.maven.plugin.annotation.Phase.PostIntegrationTest;
-import org.glassfish.maven.plugin.command.StopDomainCommand;
+import fish.payara.maven.plugin.command.StopDomainCommand;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 

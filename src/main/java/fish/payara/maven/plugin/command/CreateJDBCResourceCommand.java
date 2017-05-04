@@ -34,11 +34,11 @@
  * holder.
  ******************************************************************************/
 
-package org.glassfish.maven.plugin.command;
+package fish.payara.maven.plugin.command;
 
-import org.glassfish.maven.plugin.GlassfishMojo;
-import org.glassfish.maven.plugin.Domain;
-import org.glassfish.maven.plugin.JdbcDataSource;
+import fish.payara.maven.plugin.GlassfishMojo;
+import fish.payara.maven.plugin.Domain;
+import fish.payara.maven.plugin.JdbcDataSource;
 
 import java.util.List;
 import java.util.Arrays;

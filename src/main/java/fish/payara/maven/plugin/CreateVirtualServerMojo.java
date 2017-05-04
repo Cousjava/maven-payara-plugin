@@ -34,11 +34,11 @@
  * holder.
  ******************************************************************************/
 
-package org.glassfish.maven.plugin;
+package fish.payara.maven.plugin;
 
 import au.net.ocean.maven.plugin.annotation.Mojo;
-import org.glassfish.maven.plugin.command.DeleteDomainCommand;
-import org.glassfish.maven.plugin.command.StopDomainCommand;
+import fish.payara.maven.plugin.command.DeleteDomainCommand;
+import fish.payara.maven.plugin.command.StopDomainCommand;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugin.logging.Log;

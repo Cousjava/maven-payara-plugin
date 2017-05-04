@@ -34,13 +34,13 @@
  * holder.
  ******************************************************************************/
 
-package org.glassfish.maven.plugin;
+package fish.payara.maven.plugin;
 
 import au.net.ocean.maven.plugin.annotation.Mojo;
 import au.net.ocean.maven.plugin.annotation.Phase;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
-import org.glassfish.maven.plugin.command.DeployCommand;
+import fish.payara.maven.plugin.command.DeployCommand;
 
 /**
  * Deploy JavaEE component artifacts to domain in a local or remote Glassfish instance

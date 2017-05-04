@@ -34,9 +34,9 @@
  * holder.
  ******************************************************************************/
 
-package org.glassfish.maven.plugin;
+package fish.payara.maven.plugin;
 
-import org.glassfish.maven.plugin.command.StartDomainCommand;
+import fish.payara.maven.plugin.command.StartDomainCommand;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugin.logging.Log;

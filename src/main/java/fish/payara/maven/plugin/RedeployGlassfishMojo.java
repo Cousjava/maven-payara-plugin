@@ -34,11 +34,11 @@
  * holder.
  ******************************************************************************/
 
-package org.glassfish.maven.plugin;
+package fish.payara.maven.plugin;
 
 import au.net.ocean.maven.plugin.annotation.Mojo;
-import org.glassfish.maven.plugin.command.DeployCommand;
-import org.glassfish.maven.plugin.command.UndeployCommand;
+import fish.payara.maven.plugin.command.DeployCommand;
+import fish.payara.maven.plugin.command.UndeployCommand;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 
