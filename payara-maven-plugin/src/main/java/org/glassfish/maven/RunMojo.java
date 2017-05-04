@@ -50,7 +50,6 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.project.MavenProject;
 import org.apache.maven.model.Resource;
-
 // embedded
 import org.glassfish.embed.EmbeddedDeployer;
 import org.glassfish.embed.ScatteredArchive;
